@@ -1,0 +1,14 @@
+<p> 
+	{{#unless devoured}}
+		<button type="button" class="btn btn-warning hasDevoured" data-id="{{this.id}}"> {{burger_name}} <br> <img style="width:15%" src="./assets/img/28-Pacman-512.png" alt="pac" class="pac" ><img src="./assets/img/32382-hamburger-icon.png" style="width:10%"> <br> Ready to eat! </button> 
+        {{!-- <i class="devour-burger fas fa-utensils" data-id="{{this.id}}"></i> --}}
+	{{/unless}}
+
+
+	
+	{{#if devoured}} 
+	<div  class=" bg-success text-light" data-id="{{this.id}}" style="text-align:center; border-radius:4px"> {{burger_name}} <br> <img style="width:30%" src="./assets/img/crumbs.png"><img src="./assets/img/28-Pacman-512.png" alt="pac" class="pac"  style="width:15%"> <br> Devoured! </div> 
+	 {{/if}}
+
+	{{!-- {{this.id}}: --}}
+</p>
